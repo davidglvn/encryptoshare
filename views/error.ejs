@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <%- include('partials/head'); -%>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <%- include('partials/navbar'); -%>
+        </nav>
+
+        <main role="main" class="container">
+            <div class="encrypto-share">
+                <h1><%= errorName %></h1>
+                <div class="jumbotron jumbotron-fluid bg-danger">
+                    <div class="container">
+                        <p class="lead text-break text-monospace"><%= errorText %></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="mastfoot mt-auto">
+            <%- include('partials/footer'); -%>
+        </footer>
+    </body>
+</html>

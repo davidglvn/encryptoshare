@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <%- include('partials/head'); -%>
+    </head>
+    <body>
+        <%- include('partials/navbar'); -%>
+
+        <main role="main" class="container">
+            <div class="encrypto-share">
+                <h1>Decrypted Text</h1>
+                <div class="jumbotron jumbotron-fluid bg-info" id="decrypted-box">
+                    <div class="container">
+                        <p class="lead text-break text-monospace" id="decrypted-text">Looking the encrypted object on the server...</p>
+                    </div>
+                </div>
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <p class="lead">This encryption has been removed and can't be viewed again!</p>
+                        <p class="font-weight-bold">Make sure to copy it localy and store secretly if required.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="mastfoot mt-auto">
+            <%- include('partials/footer'); -%>
+        </footer>
+    </body>
+</html>
